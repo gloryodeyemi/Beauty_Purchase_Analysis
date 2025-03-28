@@ -1,26 +1,4 @@
-import gspread
 import pandas as pd
-from google.oauth2.service_account import Credentials
-from dotenv import load_dotenv
-import os
-
-# Load environment variables from .env file
-load_dotenv()
-GOOGLE_SHEET_NAME = os.getenv("SHEET_NAME")
-SERVICE_ACCOUNT_FILE = os.getenv("SERVICE_ACCOUNT_FILE")
-
-# Define the required scope
-SCOPES = ['https://spreadsheets.google.com/feeds',
-         'https://www.googleapis.com/auth/drive']
-
-
-# Extract data from Google Sheet
-def fetch_google_sheets_data():
-    creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-    client = gspread.authorize(creds)
-    sheet = client.open(GOOGLE_SHEET_NAME).sheet1
-    data = sheet.get_all_records()
-    return pd.DataFrame(data)
 
 # Get summary statistics
 def data_summary(df):
@@ -36,12 +14,10 @@ def convert_date_format(df):
     df['Date_Bought'] = pd.to_datetime(df['Date_Bought'])
     print("Date format converted!")
 
-
 # Convert quantity to numeric
 def convert_quantity_to_numeric(df):
     df['Quantity'] = pd.to_numeric(df['Quantity'], errors='coerce')
     print("Quantity data type converted!")
-
 
 # Convert unit price and total_price to numeric
 def convert_price_to_numeric(df):
@@ -53,7 +29,6 @@ def convert_price_to_numeric(df):
     df['Unit_Price'] = pd.to_numeric(df['Unit_Price'], errors='coerce')
     df['Total_Price'] = pd.to_numeric(df['Total_Price'], errors='coerce')
     print("Unit price and total price converted!")
-
 
 # Check and handle missing data
 def handle_missing_data(df):
@@ -83,7 +58,6 @@ def handle_missing_data(df):
     
     return df
 
-
 # Add a 'Price_Category' column based on 'Unit_Price'.
 def add_price_category(df):
     def categorize(price):
@@ -97,8 +71,7 @@ def add_price_category(df):
     df['Price_Category'] = df['Unit_Price'].apply(categorize)
     return df
 
-
-# Removes duplicate data and keep first occurrence.
+# Removes duplicate data and keeps the first occurrence.
 def remove_duplicates(df, columns=None):
     before = df.shape[0]
 
@@ -109,19 +82,34 @@ def remove_duplicates(df, columns=None):
     return df
 
 
+# Drop 
+def product_name_conversion(df):
+    # Drop the old 'Product_Name' column and rename 'Short_Name' to 'Product_Name'
+    df = df.drop(columns=['Product_Name'], errors='ignore')
+    df = df.rename(columns={'Short_Name': 'Product_Name'})
 
-beauty_data = fetch_google_sheets_data()
-data_summary(beauty_data)
-# print(beauty_data.head())
-# print(beauty_data.info())
+    # Convert all column names to lowercase
+    df.columns = [col.lower() for col in df.columns]
+    print("Column renamed and in lowercase!")
+    return df
 
-convert_date_format(beauty_data)
-convert_quantity_to_numeric(beauty_data)
-convert_price_to_numeric(beauty_data)
-beauty_data_cleaned = handle_missing_data(beauty_data)
-beauty_data_cleaned = add_price_category(beauty_data_cleaned)
-beauty_data_cleaned = remove_duplicates(beauty_data_cleaned)
-# print(beauty_data_cleaned.head())
-# print(beauty_data_cleaned.info())
-data_summary(beauty_data)
-data_summary(beauty_data_cleaned)
+
+# Runs all transformations on the data
+def clean_data(df):
+    convert_date_format(df)
+    convert_quantity_to_numeric(df)
+    convert_price_to_numeric(df)
+    df = handle_missing_data(df)
+    df = add_price_category(df)
+    df = remove_duplicates(df)
+    df = product_name_conversion(df)
+    print("Data cleaned and transformed!\n")
+    return df
+
+# Test the cleaning process
+# if __name__ == "__main__":
+#     beauty_data = pd.read_csv('data/raw_data.csv')  # Load raw data
+#     beauty_data_cleaned = clean_data(beauty_data)
+#     data_summary(beauty_data_cleaned)
+#     beauty_data_cleaned.to_csv("data/cleaned_data.csv", index=False)  # Save cleaned data
+#     print("Data cleaning and transformation complete!")
