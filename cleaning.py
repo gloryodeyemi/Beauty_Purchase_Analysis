@@ -91,7 +91,7 @@ def product_name_conversion(df):
     df = df.drop(columns=['Product_Name'], errors='ignore')
 
     # Create a new Product_Name by concatenating 'Brand' and 'Short_Name'
-    df['Product_Name'] = df['Brand'] + ' - ' + df['Short_Name']
+    df['Product_Name'] = (df['Brand'] + ' - ' + df['Short_Name']).str.upper()
 
    # Drop the 'Short_Name' column
     df = df.drop(columns=['Short_Name'], errors='ignore')
