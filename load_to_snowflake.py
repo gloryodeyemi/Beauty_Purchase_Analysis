@@ -12,6 +12,7 @@ SNOWFLAKE_ACCOUNT=os.getenv("SNOWFLAKE_ACCOUNT")
 SNOWFLAKE_WH=os.getenv("SNOWFLAKE_WH")
 SNOWFLAKE_DB=os.getenv("SNOWFLAKE_DB")
 SNOWFLAKE_SCHEMA=os.getenv("SNOWFLAKE_SCHEMA")
+SNOWFLAKE_TABLE=os.getenv("SNOWFLAKE_TB")
 
 # Snowflake connection parameters
 conn = snowflake.connector.connect(
@@ -27,6 +28,5 @@ conn = snowflake.connector.connect(
 def load_data(df):
     conn.cursor().execute("USE ROLE beauty_role")
     conn.cursor().execute(f"USE SCHEMA {SNOWFLAKE_SCHEMA}")
-    # success, num_chunks, num_rows, output = write_pandas(conn, df, f"{SNOWFLAKE_SCHEMA}.raw_data")
-    success, num_chunks, num_rows, output = write_pandas(conn, df, 'RAW_DATA')
+    success, num_chunks, num_rows, output = write_pandas(conn, df, SNOWFLAKE_TABLE)
     print(f"Success: {success}, Number of Chunks: {num_chunks}, Rows Inserted: {num_rows}")
