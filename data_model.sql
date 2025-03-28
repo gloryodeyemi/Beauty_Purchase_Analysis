@@ -29,6 +29,7 @@ CREATE OR REPLACE SCHEMA beauty_purchase_fact; -- fact table schema
 CREATE OR REPLACE SCHEMA beauty_purchase_dim_product; -- product dimension schema
 CREATE OR REPLACE SCHEMA beauty_purchase_dim_store; -- store dimension schema
 CREATE OR REPLACE SCHEMA beauty_purchase_dim_date; -- date dimension schema
+CREATE OR REPLACE SCHEMA beauty_purchase_cleaned; -- cleaned data schema
 
 /*
 fact and dimension tables creation
@@ -37,7 +38,7 @@ fact and dimension tables creation
 -- date dimension table
 CREATE OR REPLACE TABLE beauty_purchase_dim_date.date (
     date_id INT AUTOINCREMENT PRIMARY KEY,
-    date DATE,
+    date DATE UNIQUE,
     day INT,
     month INT,
     quarter INT,
@@ -49,37 +50,37 @@ CREATE OR REPLACE TABLE beauty_purchase_dim_date.date (
 -- store dimension table
 CREATE OR REPLACE TABLE beauty_purchase_dim_store.store (
     store_id INT AUTOINCREMENT PRIMARY KEY,
-    store_name VARCHAR(16777216)
+    store_name VARCHAR(16777216) UNIQUE
 );
 
 -- brand table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.brand (
     brand_id INT AUTOINCREMENT PRIMARY KEY,
-    brand_name VARCHAR(16777216)
+    brand_name VARCHAR(16777216) UNIQUE
 );
 
 -- product type table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.product_type (
     type_id INT AUTOINCREMENT PRIMARY KEY,
-    type_name VARCHAR(16777216)
+    type_name VARCHAR(16777216) UNIQUE
 );
 
 -- product purpose table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.product_purpose (
     purpose_id INT AUTOINCREMENT PRIMARY KEY,
-    purpose_name VARCHAR(16777216)
+    purpose_name VARCHAR(16777216) UNIQUE
 );
 
 -- product category table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.product_category (
     category_id INT AUTOINCREMENT PRIMARY KEY,
-    category_name VARCHAR(16777216)
+    category_name VARCHAR(16777216) UNIQUE
 );
 
 -- product dimension table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.product (
     product_id INT AUTOINCREMENT PRIMARY KEY,
-    product_name VARCHAR(16777216),
+    product_name VARCHAR(16777216) UNIQUE,
     category_id INT,
     type_id INT,
     purpose_id INT,
@@ -103,4 +104,19 @@ CREATE OR REPLACE TABLE beauty_purchase_fact.fact_purchase (
     FOREIGN KEY (product_id) REFERENCES beauty_purchase_dim_product.product(product_id),
     FOREIGN KEY (store_id) REFERENCES beauty_purchase_dim_store.store(store_id),
     FOREIGN KEY (date_id) REFERENCES beauty_purchase_dim_date.date(date_id)
+);
+
+-- table for cleaned raw data
+CREATE OR REPLACE TABLE beauty_purchase_cleaned.raw_data (
+    date_bought DATE,
+    product_name VARCHAR(16777216),
+    product_category VARCHAR(16777216),
+    product_type VARCHAR(16777216),
+    product_purpose VARCHAR(16777216),
+    brand VARCHAR(16777216),
+    store VARCHAR(16777216),
+    quantity INT,
+    unit_price NUMBER(38,2),
+    total_price NUMBER(38,2),
+    price_category VARCHAR(255)
 );

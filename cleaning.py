@@ -11,7 +11,7 @@ def data_summary(df):
 
 # Convert date column to date format
 def convert_date_format(df):
-    df['Date_Bought'] = pd.to_datetime(df['Date_Bought'])
+    df['Date_Bought'] = pd.to_datetime(df['Date_Bought'], errors='coerce').dt.date
     print("Date format converted!")
 
 # Convert quantity to numeric
@@ -38,6 +38,9 @@ def handle_missing_data(df):
 
     # Drop rows where 'Product_Name' or 'Short_Name' is missing
     df.dropna(subset=['Product_Name', 'Short_Name'], inplace=True)
+
+    # Drop rows where 'Date_Bought' is missing
+    df.dropna(subset=['Date_Bought'], inplace=True)
 
     # Fill missing categorical values with 'Unknown'
     categorical_columns = ['Brand', 'Store', 'Product_Type', 'Product_Category', 'Product_Purpose']
@@ -82,19 +85,24 @@ def remove_duplicates(df, columns=None):
     return df
 
 
-# Drop 
+# Generates Product_Name
 def product_name_conversion(df):
-    # Drop the old 'Product_Name' column and rename 'Short_Name' to 'Product_Name'
+    # Drop the Product_Name column
     df = df.drop(columns=['Product_Name'], errors='ignore')
-    df = df.rename(columns={'Short_Name': 'Product_Name'})
 
-    # Convert all column names to lowercase
-    df.columns = [col.lower() for col in df.columns]
-    print("Column renamed and in lowercase!")
+    # Create a new Product_Name by concatenating 'Brand' and 'Short_Name'
+    df['Product_Name'] = df['Brand'] + ' - ' + df['Short_Name']
+
+   # Drop the 'Short_Name' column
+    df = df.drop(columns=['Short_Name'], errors='ignore')
+
+    # Convert all column names to uppercase
+    df.columns = [col.upper() for col in df.columns]
+    print("Product_Name column created and in uppercase!\n")
     return df
 
 
-# Runs all transformations on the data
+# Runs all cleaning on the data
 def clean_data(df):
     convert_date_format(df)
     convert_quantity_to_numeric(df)
@@ -103,8 +111,11 @@ def clean_data(df):
     df = add_price_category(df)
     df = remove_duplicates(df)
     df = product_name_conversion(df)
-    print("Data cleaned and transformed!\n")
+    data_summary(df)
+    print("Data cleaned!\n")
     return df
+
+
 
 # Test the cleaning process
 # if __name__ == "__main__":

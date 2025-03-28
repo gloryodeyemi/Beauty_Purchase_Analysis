@@ -1,21 +1,24 @@
 from extract import fetch_google_sheets_data
-from transform import clean_data
+from cleaning import clean_data
+from load_to_snowflake import load_data
 import pandas as pd
 
 def run_pipeline():
-    print("🚀 Starting Data Pipeline...")
+    print("🚀 Starting data pipeline...\n")
 
-    # Step 1: Extract Data
+    # Step 1: Extract data
     df = fetch_google_sheets_data()
-    # df.to_csv("data/raw_data.csv", index=False)  # Save raw backup
-    print("✅ Data Extraction Complete.")
+    print("✅ Data extraction complete.\n")
 
-    # Step 2: Transform Data
+    # Step 2: Clean and transform data
     df_cleaned = clean_data(df)
-    # df_cleaned.to_csv("data/cleaned_data.csv", index=False)  # Save cleaned data
-    print("✅ Data Cleaning Complete.")
+    print("✅ Data cleaning complete.\n")
 
-    print("🎉 Data Pipeline Completed Successfully!")
+    # Step 3: Load data into snowflake
+    load_data(df_cleaned)
+    print("✅ Data loading complete.\n")
+
+    print("🎉 Data pipeline completed successfully!")
 
 if __name__ == "__main__":
     run_pipeline()
