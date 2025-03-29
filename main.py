@@ -1,5 +1,5 @@
 from extract import fetch_google_sheets_data
-from cleaning import data_summary, clean_data
+from transform import data_summary, clean_data
 from load_to_snowflake import get_latest_date_and_records, filter_data, load_data
 import pandas as pd
 
