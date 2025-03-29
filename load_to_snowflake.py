@@ -13,6 +13,8 @@ SNOWFLAKE_WH=os.getenv("SNOWFLAKE_WH")
 SNOWFLAKE_DB=os.getenv("SNOWFLAKE_DB")
 SNOWFLAKE_SCHEMA=os.getenv("SNOWFLAKE_SCHEMA")
 SNOWFLAKE_TABLE=os.getenv("SNOWFLAKE_TB")
+SNOWFLAKE_SCHEMA_PROC=os.getenv("SNOWFLAKE_SCHEMA_PROC")
+SNOWFLAKE_PROC=os.getenv("SNOWFLAKE_PROC")
 
 # Snowflake connection parameters
 conn = snowflake.connector.connect(
@@ -21,7 +23,6 @@ conn = snowflake.connector.connect(
     account=SNOWFLAKE_ACCOUNT,
     warehouse=SNOWFLAKE_WH,
     database=SNOWFLAKE_DB,
-    # schema=SNOWFLAKE_SCHEMA
 )
 
 cursor = conn.cursor()
@@ -66,4 +67,10 @@ def filter_data(raw_df, latest_snowflake_df, latest_date):
 def load_data(df):
     success, num_chunks, num_rows, output = write_pandas(conn, df, SNOWFLAKE_TABLE)
     print(f"Success: {success}, Number of Chunks: {num_chunks}, Rows Inserted: {num_rows}")
-    conn.close()
+
+
+# Insert data into fact and dimension tables using stored procedure
+def insert_data_into_tables():
+    cursor.execute(f"USE SCHEMA {SNOWFLAKE_SCHEMA_PROC}")
+    cursor.execute(f"CALL {SNOWFLAKE_SCHEMA_PROC}.{SNOWFLAKE_PROC};")
+    cursor.close()
