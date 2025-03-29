@@ -111,7 +111,7 @@ def clean_data(df):
     df = add_price_category(df)
     df = remove_duplicates(df)
     df = product_name_conversion(df)
-    data_summary(df)
+    # data_summary(df)
     print("Data cleaned!\n")
     return df
 
