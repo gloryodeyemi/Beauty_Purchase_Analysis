@@ -1,26 +1,28 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
-from extract import fetch_google_sheets_data
-from transform import clean_data
-from load_to_snowflake import get_latest_date_and_records, filter_data, load_data, insert_data_into_tables
+from etl.extract import fetch_google_sheets_data
+from etl.transform import clean_data
+from etl.loading import get_latest_date_and_records, filter_data, load_data, insert_data_into_tables
 
-# Define the default DAG arguments
+
+# Default DAG arguments
 default_args = {
     "owner": "airflow",
     "depends_on_past": False,
-    "start_date": datetime(2025, 3, 28),  # Set a past date so it runs immediately
+    "start_date": datetime(2025, 3, 28),
     "retries": 1,
     "retry_delay": timedelta(minutes=5),
     "catchup": False,
 }
 
-# Define the DAG
+# The DAG
 with DAG(
     "beauty_purchase_pipeline",
     default_args=default_args,
     description="Automates the ETL process for beauty purchases",
-    schedule_interval="0 0 * * 0",  # Runs weekly at midnight on Sundays
+    schedule="0 0 * * *",  # runs weekly at midnight on Sundays
+    catchup=False,
 ) as dag:
 
     def extract():
@@ -69,4 +71,5 @@ with DAG(
     python_callable=insert,
 )
 
-    extract_task >> transform_task >> filter_task >> load_task >> insert_task  # Task dependency
+    extract_task >> transform_task >> filter_task >> load_task >> insert_task  # task dependency
+    # extract_task >> transform_task

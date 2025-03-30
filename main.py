@@ -1,6 +1,6 @@
-from extract import fetch_google_sheets_data
-from transform import data_summary, clean_data
-from load_to_snowflake import get_latest_date_and_records, filter_data, load_data
+from airflow.dags.etl.extract import fetch_google_sheets_data
+from airflow.dags.etl.transform import data_summary, clean_data
+from airflow.dags.etl.load_to_snowflake import get_latest_date_and_records, filter_data, load_data
 import pandas as pd
 
 def run_pipeline():

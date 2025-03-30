@@ -175,3 +175,11 @@ cython_debug/
 
 # Others
 .DS_Store
+logs
+config
+plugins
+airflow.cfg
+airflow.db
+webserver_config.py
+airflow-webserver.pid
+beauty-pipeline-a6f5e2fffe30.json

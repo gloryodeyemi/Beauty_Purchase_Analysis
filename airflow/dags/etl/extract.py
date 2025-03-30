@@ -23,3 +23,8 @@ def fetch_google_sheets_data():
     df = pd.DataFrame(data)
     print("Data extracted from Google Sheet and converted to DataFrame!")
     return df
+
+if __name__ == "__main__":
+    print("Extraction begins...")
+    df = fetch_google_sheets_data()
+    print(df.head())
