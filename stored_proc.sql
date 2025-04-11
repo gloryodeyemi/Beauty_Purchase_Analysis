@@ -24,7 +24,7 @@ BEGIN
 
         
     -- insert unique dates into the date dimension table
-    INSERT INTO beauty_purchase_dim_date.date (date, day, month, quarter, year, day_of_week, week_of_year)
+    INSERT INTO beauty_purchase_dim_date.date (date, day, month, quarter, year, day_of_week, week_of_year, month_of_year)
     SELECT DISTINCT
         date_bought,
         EXTRACT(DAY FROM date_bought) AS day,
@@ -32,7 +32,8 @@ BEGIN
         EXTRACT(QUARTER FROM date_bought) AS quarter,
         EXTRACT(YEAR FROM date_bought) AS year,
         DAYNAME(date_bought) AS day_of_week,
-        EXTRACT(WEEK FROM date_bought) AS week_of_year
+        EXTRACT(WEEK FROM date_bought) AS week_of_year,
+        MONTHNAME(date_bought) AS month_of_year
     FROM beauty_purchase_cleaned.raw_data
     WHERE NOT EXISTS (
         SELECT 1

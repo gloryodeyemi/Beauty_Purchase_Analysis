@@ -16,6 +16,8 @@ CREATE OR REPLACE DATABASE beauty_purchase_db;
 
 -- show grants on warehouse
 SHOW GRANTS ON WAREHOUSE beauty_warehouse;
+SHOW GRANTS ON SCHEMA beauty_purchase_cleaned;
+
 
 -- grant access to roles
 GRANT USAGE ON WAREHOUSE beauty_warehouse TO ROLE beauty_role;
@@ -30,6 +32,7 @@ CREATE OR REPLACE SCHEMA beauty_purchase_dim_product; -- product dimension schem
 CREATE OR REPLACE SCHEMA beauty_purchase_dim_store; -- store dimension schema
 CREATE OR REPLACE SCHEMA beauty_purchase_dim_date; -- date dimension schema
 CREATE OR REPLACE SCHEMA beauty_purchase_cleaned; -- cleaned data schema
+CREATE OR REPLACE SCHEMA beauty_purchase_procs; -- stored procedures schema
 
 /*
 fact and dimension tables creation
@@ -44,7 +47,8 @@ CREATE OR REPLACE TABLE beauty_purchase_dim_date.date (
     quarter INT,
     year INT,
     day_of_week VARCHAR(255),
-    week_of_year INT
+    week_of_year INT,
+    month_of_year VARCHAR(255)
 );
 
 -- store dimension table

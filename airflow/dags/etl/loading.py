@@ -58,6 +58,16 @@ def filter_data(raw_df, latest_snowflake_df, latest_date):
     return df_new
 
 
+# Append new purchase data to csv file 
+def append_to_csv(df_new, filename="purchase_data.csv"):
+    if not df_new.empty:
+        file_exists = os.path.isfile(filename)
+        df_new.to_csv(filename, mode='a', header=not file_exists, index=False)
+        print(f"{len(df_new)} new records appended to {filename}.\n")
+    else:
+        print("No new records to append to CSV.")
+
+
 # Load data into Snowflake
 def load_data(df):
     success, num_chunks, num_rows, output = write_pandas(conn, df, SNOWFLAKE_TABLE)
