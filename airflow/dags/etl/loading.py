@@ -59,13 +59,28 @@ def filter_data(raw_df, latest_snowflake_df, latest_date):
 
 
 # Append new purchase data to csv file 
+# def append_to_csv(df_new, filename="purchase_data.csv"):
+#     if not df_new.empty:
+#         file_exists = os.path.isfile(filename)
+#         df_new.to_csv(filename, mode='a', header=not file_exists, index=False)
+#         print(f"{len(df_new)} new records appended to {filename}.\n")
+#     else:
+#         print("No new records to append to CSV.")
 def append_to_csv(df_new, filename="purchase_data.csv"):
-    if not df_new.empty:
-        file_exists = os.path.isfile(filename)
-        df_new.to_csv(filename, mode='a', header=not file_exists, index=False)
-        print(f"{len(df_new)} new records appended to {filename}.\n")
-    else:
+    if df_new.empty:
         print("No new records to append to CSV.")
+        return
+
+    # Get the output directory from env variable or default to current directory
+    output_dir = os.getenv("CSV_OUTPUT_PATH", os.getcwd())
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Full path to the CSV file
+    full_path = os.path.join(output_dir, filename)
+
+    file_exists = os.path.isfile(full_path)
+    df_new.to_csv(full_path, mode='a', header=not file_exists, index=False)
+    print(f"{len(df_new)} new records appended to {full_path}.\n")
 
 
 # Load data into Snowflake

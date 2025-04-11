@@ -1,0 +1,234 @@
+DATE_BOUGHT,PRODUCT_CATEGORY,PRODUCT_TYPE,PRODUCT_PURPOSE,BRAND,STORE,QUANTITY,UNIT_PRICE,TOTAL_PRICE,PRICE_CATEGORY,PRODUCT_NAME
+2022-12-22,Haircare,Hair Mousse,Styling,TRESEMMÉ ,Amazon,2,5.99,11.98,Low,TRESEMMÉ  - HAIR MOUSSE
+2023-01-04,Haircare,Hair Gel,Styling,ECO STYLE,Amazon,1,18.44,18.44,Medium,ECO STYLE - ECO STYLE GEL
+2023-01-10,Haircare,Tools/Accessories (Hair),Styling,UTOPIA CARE,Amazon,1,7.99,7.99,Low,UTOPIA CARE - HAIR SCISSORS
+2023-01-10,Haircare,Tools/Accessories (Hair),Styling,NICECRAFT,Amazon,1,6.48,6.48,Low,NICECRAFT - HAIR STYLING COMB KIT
+2023-01-10,Haircare,Tools/Accessories (Hair),Styling,UNKNOWN,Amazon,2,7.27,14.53,Low,UNKNOWN - WIDE TOOTH COMB
+2023-01-13,Haircare,Heat Protectant,Protection,TRESEMMÉ ,Amazon,1,6.77,6.77,Low,TRESEMMÉ  - KERATIN SMOOTH HEAT PROTECT SPRAY
+2023-03-10,Haircare,Tools/Accessories (Hair),Styling,REVLON,Amazon,1,47.65,47.65,Medium,REVLON - ONE-STEP™ VOLUMIZER AND IONIC HAIR DRYER
+2023-03-10,Haircare,Tools/Accessories (Hair),Styling,LEEVEN,Amazon,3,4.63,13.88,Low,LEEVEN - COLLAPSIBLE WIG HANGER
+2023-03-18,Oral care,Tongue Scraper,Cleansing,MOUTHOLOGY,Amazon,3,5.33,15.99,Low,MOUTHOLOGY - STAINLESS STEEL TONGUE SCRAPER
+2023-03-24,Haircare,Tools/Accessories (Hair),Styling,NAFABOIG,Amazon,1,10.99,10.99,Medium,NAFABOIG - HAIR JEWELRY
+2023-04-05,Haircare,Tools/Accessories (Hair),Styling,CONAIR,Amazon,1,19.19,19.19,Medium,CONAIR - 246RNC 1875 WATT DRYER
+2023-04-05,Haircare,Tools/Accessories (Hair),Styling,CONAIR,Amazon,1,27.98,27.98,Medium,CONAIR - DOUBLE CERAMIC FLAT IRON
+2023-06-08,Haircare,Conditioner,Moisturizing & Hydration,AUNT JACKIE,Amazon,1,20.55,20.55,Medium,"AUNT JACKIE - IN CONTROL ""ANTI-POOF"" MOISTURIZING & SOFTENING CONDITIONER"
+2023-06-08,Haircare,Hair Oil,Hair Growth,AUNT JACKIE,Amazon,1,15.0,15.0,Medium,AUNT JACKIE - SOFT ALL OVER MULTI-USE OIL
+2023-06-19,Haircare,Hair Extension,Styling,XTREND,Amazon,6,4.67,27.99,Low,XTREND - NATURAL SPRING TWIST
+2023-07-24,Body Fragrance,Perfume,Odor Control & Freshness,VERA WANG,Amazon,1,49.17,49.17,Medium,VERA WANG - PRINCESS EAU DE TOILETTE
+2023-07-28,Skincare (Body),Feminine Wash,Cleansing,VAGISIL,Amazon,1,6.73,6.73,Low,VAGISIL - FEMININE WASH
+2023-08-12,Skincare (Face),Toner,Toning & Balancing,E.L.F,Amazon,1,9.97,9.97,Low,E.L.F - KEEP YOUR BALANCE TONER
+2023-08-12,Skincare (Body),Bar Soap,Cleansing,CERAVE,Amazon,1,7.0,7.0,Low,CERAVE - HYDRATING CLEANSING BAR SOAP
+2023-08-12,Skincare (Face),Face Lotion,Moisturizing & Hydration,E.L.F,Amazon,1,9.97,9.97,Low,E.L.F - DAILY HYDRATION MOISTURIZER
+2023-08-12,Lip care,Physical Exfoliator,Exfoliation,E.L.F,Amazon,1,5.49,5.49,Low,E.L.F - LIP EXFOLIATOR
+2023-08-12,Lip care,Lip Mask,Moisturizing & Hydration,E.L.F,Amazon,1,8.97,8.97,Low,E.L.F - HOLY HYDRATION! LIP MASK
+2023-08-12,Skincare (Face),Eye Cream,Moisturizing & Hydration,E.L.F,Amazon,1,12.11,12.11,Medium,E.L.F - HOLY HYDRATION! EYE CREAM
+2023-08-12,Skincare (Body),Body Lotion,Moisturizing & Hydration,CERAVE,Amazon,1,25.28,25.28,Medium,CERAVE - DAILY MOISTURIZING LOTION
+2023-08-12,Skincare (Face),Face Cleanser,Cleansing,E.L.F,Amazon,1,7.97,7.97,Low,E.L.F - HOLY HYDRATION! DAILY CLEANSER
+2023-08-15,Skincare (Face),Physical Exfoliator,Exfoliation,E.L.F,Amazon,1,12.48,12.48,Medium,E.L.F - GENTLE PEELING EXFOLIANT FACE CLEANSER
+2023-08-29,Skincare (Body),Feminine Wash,Cleansing,CANESFRESH,Amazon,1,4.0,4.0,Low,CANESFRESH - FEMININE WASH
+2023-09-09,Skincare (Face),Serum,Treatment & Repair,GARNIER,Amazon,1,14.24,14.24,Medium,GARNIER - VITAMIN C SERUM
+2023-09-29,Skincare (Body),Foot Balm,Exfoliation,FLEXITOL,Amazon,1,9.99,9.99,Low,FLEXITOL - HEEL BALM
+2023-09-29,Lip care,Physical Exfoliator,Exfoliation,E.L.F,Amazon,1,7.0,7.0,Low,E.L.F - LIP EXFOLIATOR
+2023-09-29,Haircare,Deep Conditioner,Treatment & Repair,SHEA MOISTURE,Amazon,1,12.44,12.44,Medium,SHEA MOISTURE - MANUKA HONEY & YOGURT DEEP CONDITIONER
+2023-10-04,Lip care,Physical Exfoliator,Exfoliation,E.L.F,Amazon,1,7.0,7.0,Low,E.L.F - LIP EXFOLIATOR
+2023-10-04,Body Fragrance,Body Mist/Spray,Odor Control & Freshness,CALGON,Amazon,1,8.49,8.49,Low,CALGON - MARSHMALLOW BODY MIST
+2023-10-09,Body Fragrance,Perfume,Odor Control & Freshness,BRITNEY SPEARS,Amazon,1,43.79,43.79,Medium,BRITNEY SPEARS - MIDNIGHT FANTASY
+2023-11-05,Skincare (Body),Bar Soap,Cleansing,CERAVE,Amazon,1,7.0,7.0,Low,CERAVE - HYDRATING CLEANSING BAR SOAP
+2023-11-05,Skincare (Face),Serum,Treatment & Repair,GARNIER,Amazon,1,14.24,14.24,Medium,GARNIER - VITAMIN C SERUM
+2023-11-05,Skincare (Face),Serum,Treatment & Repair,GARNIER,Amazon,1,13.53,13.53,Medium,GARNIER - ALOE VERA SERUM
+2023-11-23,Skincare (Face),Physical Exfoliator,Exfoliation,GARNIER,Amazon,1,24.97,24.97,Medium,GARNIER - 3IN1 WASH+SCRUB+MASK
+2023-11-23,Skincare (Face),Serum,Treatment & Repair,GARNIER,Amazon,1,16.97,16.97,Medium,GARNIER - RETINOL-BERRY SUPER SMOOTHING SERUM CREAM
+2023-11-23,Skincare (Face),Face Cleanser,Cleansing,GARNIER,Amazon,1,14.25,14.25,Medium,GARNIER - BRIGHTENING GEL FACE CLEANSER WITH VITAMIN C
+2023-11-23,Skincare (Face),Face Cream,Moisturizing & Hydration,GARNIER,Amazon,1,21.83,21.83,Medium,GARNIER - PINEA-C BRIGHTENING SERUM CREAM
+2023-11-23,Skincare (Face),Micellar Water,Cleansing,GARNIER,Amazon,1,8.97,8.97,Low,GARNIER - MICELLAR CLEANSING WATER
+2023-11-23,Haircare,Hair Extension,Styling,UNKNOWN,Amazon,3,6.66,19.99,Low,UNKNOWN - AFRO TWIST HAIR
+2023-11-23,Haircare,Hair Extension,Styling,LEEVEN,Amazon,7,6.28,43.99,Low,LEEVEN - NU FAUX LOCS CROCHET HAIR
+2023-11-27,Body Fragrance,Perfume,Odor Control & Freshness,ELIZABETH ARDEN,Amazon,1,62.4,62.4,High,ELIZABETH ARDEN - WHITE TEA EDT
+2023-11-27,Body Fragrance,Body Mist/Spray,Odor Control & Freshness,VERA WANG,Amazon,1,8.97,8.97,Low,VERA WANG - EMBRACE MARIGOLD AND GARDENIA BODY MIST
+2023-12-09,Skincare (Body),Body Lotion,Moisturizing & Hydration,CERAVE,Amazon,1,22.77,22.77,Medium,CERAVE - DAILY MOISTURIZING LOTION
+2023-12-09,Lip care,Lip Mask,Moisturizing & Hydration,E.L.F,Amazon,1,8.97,8.97,Low,E.L.F - HOLY HYDRATION! LIP MASK
+2023-12-13,Skincare (Body),Bar Soap,Cleansing,CERAVE,Amazon,1,7.0,7.0,Low,CERAVE - HYDRATING CLEANSING BAR SOAP
+2023-12-25,Skincare (Body),Physical Exfoliator,Exfoliation,DOVE,Amazon,1,9.99,9.99,Low,DOVE - EXFOLIATING BODY POLISH SCRUB
+2023-12-25,Haircare,Deep Conditioner,Treatment & Repair,SHEA MOISTURE,Amazon,1,14.96,14.96,Medium,SHEA MOISTURE - MANUKA HONEY & MAFURA OIL DEEP CONDITIONING TREATMENT
+2024-01-04,Skincare (Face),Serum,Treatment & Repair,GARNIER,Amazon,1,12.27,12.27,Medium,GARNIER - VITAMIN C SERUM
+2024-01-04,Skincare (Face),Serum,Treatment & Repair,GARNIER,Amazon,1,13.53,13.53,Medium,GARNIER - ALOE VERA SERUM
+2024-01-15,Oral care,Mouthwash/Pulling Oil,Cleansing,PLANT OF LIFE,Amazon,1,19.95,19.95,Medium,PLANT OF LIFE - PULLING OIL
+2024-01-15,Skincare (Face),Toner,Toning & Balancing,THAYERS,Amazon,1,16.42,16.42,Medium,THAYERS - ALCOHOL-FREE WITCH HAZEL ROSE PETAL FACE TONER
+2024-01-15,Skincare (Face),Clay Mask,Exfoliation,AZTEC SECRET,Amazon,1,11.69,11.69,Medium,AZTEC SECRET - VERSION 1 CLAY
+2024-01-15,Body Fragrance,Deodrant,Odor Control & Freshness,SCHMIDT'S,Amazon,1,9.49,9.49,Low,SCHMIDT'S - ROSE & VANILLA 48H ALUMINUM-FREE DEODORANT
+2024-01-15,Skincare (Body),Physical Exfoliator,Exfoliation,FENGEK,Amazon,2,4.99,9.98,Low,FENGEK - AFRICAN EXFOLIATING NET
+2024-01-15,Body Fragrance,Perfume,Odor Control & Freshness,LUCKY,Amazon,1,40.7,40.7,Medium,LUCKY - LUCKY YOU EAU DE TOILETTE
+2024-01-15,Body Fragrance,Perfume,Odor Control & Freshness,ARMAF,Amazon,1,50.24,50.24,High,ARMAF - CLUB DE NUIT EDP SPRAY WOMEN
+2024-01-15,Haircare,Leave-in Spray/Hair Herbs,Hair Growth,UNKNOWN,Amazon,1,24.99,24.99,Medium,UNKNOWN - RICE WATER SPRAY
+2024-01-15,Haircare,Hair Bonnet,Protection,BOWINR,Amazon,2,5.49,10.98,Low,BOWINR - SILK BONNET SLEEP CAP
+2024-01-17,Skincare (Body),Body Wash,Cleansing,DR. BRONNER'S,Amazon,1,15.43,15.43,Medium,DR. BRONNER'S - PURE-CASTILE LIQUID SOAP
+2024-01-17,Lip care,Lip Mask,Moisturizing & Hydration,E.L.F,Amazon,1,8.97,8.97,Low,E.L.F - HOLY HYDRATION! LIP MASK
+2024-01-17,Haircare,Shower Cap,Protection,MIKIMINI,Amazon,1,9.36,9.36,Low,MIKIMINI - LARGE SHOWER CAP
+2024-02-03,Skincare (Face),Sunscreen,Protection,GARNIER,Amazon,1,18.97,18.97,Medium,GARNIER - OMBRELLE FACE SUNSCREEN LOTION SPF 60
+2024-02-14,Skincare (Body),Physical Exfoliator,Exfoliation,DOVE,Amazon,1,9.47,9.47,Low,DOVE - EXFOLIATING BODY POLISH SCRUB
+2024-02-14,Skincare (Face),Sunscreen,Protection,NEUTROGENA,Amazon,1,17.97,17.97,Medium,NEUTROGENA - CLEAR FACE SUNSCREEN LOTION
+2024-02-14,Skincare (Face),Eye Cream,Treatment & Repair,GARNIER,Amazon,1,9.97,9.97,Low,GARNIER - BRIGHTENING EYE CREAM WITH VITAMIN C
+2024-02-14,Oral care,Floss,Cleansing,GUM,Amazon,1,4.47,4.47,Low,GUM - DENTAL FLOSS MINT
+2024-02-21,Haircare,Hair Oil,Treatment & Repair,MIELLE,Amazon,1,8.99,8.99,Low,MIELLE - ROSEMARY MINT SCALP & HAIR STRENGTHENING OIL
+2024-02-23,Haircare,Detangler,Moisturizing & Hydration,SHEA MOISTURE,Amazon,1,17.99,17.99,Medium,SHEA MOISTURE - LOW POROSITY WEIGHTLESS HYDRATING DETANGLER
+2024-02-23,Haircare,Conditioner,Moisturizing & Hydration,SHEA MOISTURE,Amazon,1,13.96,13.96,Medium,SHEA MOISTURE - LOW POROSITY WEIGHTLESS HYDRATING CONDITIONER
+2024-02-23,Haircare,Leave-in Conditioner,Moisturizing & Hydration,MIELLE,Amazon,1,22.14,22.14,Medium,MIELLE - POMEGRANATE & HONEY LEAVE IN CONDITIONER
+2024-02-23,Haircare,Hair Butter,Styling,CAMILLE ROSE,Amazon,1,29.99,29.99,Medium,CAMILLE ROSE - NATURALS ALMOND JAI TWISTING BUTTER
+2024-02-23,Haircare,Hair Oil,Hair Growth,AUNT JACKIE,Amazon,1,17.98,17.98,Medium,AUNT JACKIE - BALANCE GROWTH OIL
+2024-02-23,Haircare,Shampoo,Cleansing,SHEA MOISTURE,Amazon,1,13.96,13.96,Medium,SHEA MOISTURE - LOW POROSITY WEIGHTLESS HYDRATING SHAMPOO
+2024-02-23,Haircare,Shampoo,Cleansing,EDEN,Amazon,1,21.99,21.99,Medium,EDEN - BODYWORKS PEPPERMINT TEA TREE CLEAR SHAMPOO
+2024-02-23,Haircare,Tools/Accessories (Hair),Hair Growth,ORIA,Amazon,1,24.99,24.99,Medium,ORIA - HANDHELD PET MASSAGER
+2024-02-23,Haircare,Tools/Accessories (Hair),Styling,KITSCH,Amazon,5,2.22,11.09,Low,KITSCH - SATIN HAIR SCRUNCHIES FOR WOMEN
+2024-03-03,Skincare (Face),Serum,Treatment & Repair,GARNIER,Amazon,1,14.24,14.24,Medium,GARNIER - VITAMIN C SERUM
+2024-03-08,Skincare (Body),Body Wash,Cleansing,J.R. WATKINS,Amazon,1,9.99,9.99,Low,J.R. WATKINS - COCONUT MILK AND HONEY NATURAL DAILY MOISTURIZING BODY WASH
+2024-03-16,Skincare (Face),Face Cream,Moisturizing & Hydration,GARNIER,Amazon,1,9.74,9.74,Low,GARNIER - VITAMIN C BRIGHTENING DAY CREAM
+2024-03-16,Skincare (Face),Face Towel,Cleansing,CLEAN SKIN,Amazon,1,12.86,12.86,Medium,CLEAN SKIN - CLEAN TOWELS
+2024-03-16,Skincare (Face),Serum,Treatment & Repair,GARNIER,Amazon,1,17.99,17.99,Medium,GARNIER - BRIGHTENING NIGHT VITAMIN-C SERUM
+2024-03-16,Lip care,Lip Balm,Moisturizing & Hydration,FLEXITOL,Amazon,1,4.79,4.79,Low,FLEXITOL - LIP BALM
+2024-03-16,Skincare (Face),Sunscreen,Protection,HAWAIIAN TROPIC,Amazon,1,7.99,7.99,Low,"HAWAIIAN TROPIC - SHEER TOUCH ULTRA RADIANCE SUNSCREEN LOTION, SPF 30"
+2024-03-16,Body Fragrance,Body Mist/Spray,Odor Control & Freshness,BATH & BODY WORKS,Bath & Body Works,2,17.68,35.35,Medium,BATH & BODY WORKS - BODY SPRAY
+2024-03-16,Body Fragrance,Deodrant,Odor Control & Freshness,LUME,Lume,2,35.08,70.16,Medium,LUME - WHOLE BODY DEODORANT
+2024-03-28,Skincare (Body),Physical Exfoliator,Exfoliation,DOVE,Amazon,1,9.47,9.47,Low,DOVE - EXFOLIATING BODY POLISH SCRUB
+2024-03-28,Skincare (Body),Body Lotion,Moisturizing & Hydration,HEMPZ,Amazon,1,21.97,21.97,Medium,HEMPZ - SWEET PINEAPPLE & HONEY MELON MOISTURIZING SKIN LOTION
+2024-03-28,Oral care,Floss,Cleansing,ORAL B,Amazon,1,3.97,3.97,Low,ORAL B - GLIDE FLOSS PICKS
+2024-03-28,Haircare,Deep Conditioner,Treatment & Repair,SHEA MOISTURE,Amazon,1,14.96,14.96,Medium,SHEA MOISTURE - MANUKA HONEY & MAFURA OIL DEEP CONDITIONING TREATMENT
+2024-04-05,Skincare (Face),Serum,Treatment & Repair,GARNIER,Amazon,1,17.2,17.2,Medium,GARNIER - RETINOL-BERRY SUPER SMOOTHING SERUM CREAM
+2024-04-05,Oral care,Mouthwash/Pulling Oil,Cleansing,GURU NANDA,Amazon,1,24.98,24.98,Medium,GURU NANDA - OIL PULLING
+2024-04-05,Oral care,Toothpaste,Cleansing,HELLO,Amazon,1,6.47,6.47,Low,HELLO - ACTIVATED CHARCOAL EPIC TEETH WHITENING TOOTHPASTE
+2024-04-05,Skincare (Face),Face Towel,Cleansing,CLEAN SKIN,Amazon,1,19.3,19.3,Medium,CLEAN SKIN - BAMBOO CLEAN TOWELS XL
+2024-04-05,Haircare,Hair Gel,Styling,MIELLE,Amazon,1,15.0,15.0,Medium,MIELLE - ROSEMARY MINT STRENGTHENING EDGE GEL
+2024-04-27,Haircare,Leave-in Spray/Hair Herbs,Hair Growth,AS I AM,Amazon,1,8.99,8.99,Low,AS I AM - ROSEMARY WATER
+2024-04-27,Haircare,Hair Oil,Treatment & Repair,MIELLE,Amazon,1,19.98,19.98,Medium,MIELLE - ROSEMARY MINT LIGHT SCALP & HAIR STRENGTHENING OIL
+2024-04-27,Haircare,Leave-in Conditioner,Moisturizing & Hydration,MIELLE,Amazon,1,9.97,9.97,Low,MIELLE - ROSEMARY MINT STRENGTHENING LEAVE-IN CONDITIONER
+2024-04-27,Haircare,Conditioner,Moisturizing & Hydration,MIELLE,Amazon,1,9.97,9.97,Low,MIELLE - ROSEMARY MINT STRENGTHENING CONDITIONER WITH BIOTIN
+2024-04-27,Haircare,Deep Conditioner,Treatment & Repair,MIELLE,Amazon,1,9.97,9.97,Low,MIELLE - ROSEMARY MINT STRENGTHENING HAIR MASQUE
+2024-04-27,Haircare,Shampoo,Cleansing,MIELLE,Amazon,1,9.97,9.97,Low,MIELLE - ROSEMARY MINT STRENGTHENING SHAMPOO INFUSED WITH BIOTIN
+2024-04-29,Haircare,Hair Mousse,Styling,SHEA MOISTURE,Amazon,1,14.96,14.96,Medium,SHEA MOISTURE - MANUKA HONEY & MAFURA OIL HYDRATING WRAP & SET MOUSSE
+2024-04-29,Haircare,Leave-in Spray/Hair Herbs,Hair Growth,AHMAD TEA,Amazon,1,9.99,9.99,Low,AHMAD TEA - JASMINE GREEN TEABAGS
+2024-04-29,Haircare,Shower Cap,Protection,KISSDATE,Amazon,3,4.66,13.99,Low,KISSDATE - DOUBLE LAYER SHOWER CAP
+2024-04-29,Haircare,Tools/Accessories (Hair),Styling,TANGLE TEEZER ,Amazon,1,22.94,22.94,Medium,TANGLE TEEZER  - DETANGLER HAIRBRUSH
+2024-05-01,Skincare (Body),Physical Exfoliator,Exfoliation,DOVE,Amazon,1,8.99,8.99,Low,DOVE - EXFOLIATING BODY POLISH SCRUB
+2024-05-04,Skincare (Face),Face Cleanser,Cleansing,GARNIER,Amazon,1,17.0,17.0,Medium,GARNIER - BRIGHTENING GEL FACE CLEANSER WITH VITAMIN C
+2024-05-04,Skincare (Body),Body Wash,Cleansing,HEMPZ,Amazon,1,14.93,14.93,Medium,HEMPZ - BODY WASH - SWEET PINEAPPLE & HONEY MELON 
+2024-05-22,Skincare (Face),Face Towel,Cleansing,DITOI,Amazon,1,16.99,16.99,Medium,DITOI - DISPOSABLE FACE TOWELS
+2024-05-22,Skincare (Body),Wet Wipes,Cleansing,COTTONELLE,Amazon,1,3.49,3.49,Low,COTTONELLE - FRESH CARE FLUSHABLE WET WIPES
+2024-06-10,Skincare (Face),Trial Kit,Multipurpose,DEARKLAIRS,Amazon,1,35.0,35.0,Medium,DEARKLAIRS - SKINCARE TRIAL KITS
+2024-06-10,Skincare (Face),Sunscreen,Protection,HAWAIIAN TROPIC,Amazon,1,13.47,13.47,Medium,"HAWAIIAN TROPIC - SILK HYDRATION WEIGHTLESS OIL-FREE FACE SUNSCREEN LOTION, SPF 30"
+2024-06-10,Skincare (Body),Bar Soap,Cleansing,IRISH SPRING,Amazon,6,1.08,6.47,Low,IRISH SPRING - BAR SOAP
+2024-06-25,Skincare (Body),Body Lotion,Moisturizing & Hydration,HEMPZ,Amazon,1,28.8,28.8,Medium,HEMPZ - VANILLA LUX HERBAL BODY MOISTURIZER
+2024-06-25,Skincare (Face),Face Gel Moisturizer,Moisturizing & Hydration,MINIMALIST,Amazon,1,11.99,11.99,Medium,MINIMALIST - VITAMIN B5 10% FACE MOISTURIZER GEL
+2024-06-25,Skincare (Face),Tools/Accessories (Skin),Protection,FANCYLOVESOTIO,Amazon,1,8.24,8.24,Low,FANCYLOVESOTIO - FACE WASH HEAD AND WRIST BANDS
+2024-06-25,Skincare (Face),Sunscreen,Protection,HARUHARU WONDER,Amazon,1,25.99,25.99,Medium,HARUHARU WONDER - BLACK RICE MOISTURE AIRYFIT DAILY SUNSCREEN
+2024-06-25,Skincare (Face),Face Cleanser,Cleansing,CERAVE,Amazon,1,22.98,22.98,Medium,CERAVE - ACNE CONTROL CLEANSER
+2024-06-25,Skincare (Face),Chemical Exfoliator,Exfoliation,HARUHARU WONDER,Amazon,1,22.25,22.25,Medium,HARUHARU WONDER - CENTELLA 3% PHA GENTLE LIQUID EXFOLIATING SERUM
+2024-06-25,Skincare (Face),Toner,Toning & Balancing,I'M FROM,Amazon,1,27.0,27.0,Medium,I'M FROM - RICE TONER
+2024-06-29,Oral care,Floss,Cleansing,T.SMILE,Amazon,1,13.99,13.99,Medium,T.SMILE - EVOLUTIONARY CLEAN DENTAL FLOSSERS
+2024-06-29,Skincare (Face),Face Towel,Cleansing,GRANNY SAYS,Amazon,1,10.99,10.99,Medium,GRANNY SAYS - LARGE FACE TOWELS
+2024-06-29,Skincare (Face),Cleansing Oil,Cleansing,HARUHARU WONDER,Amazon,1,24.93,24.93,Medium,HARUHARU WONDER - BLACK RICE MOISTURE DEEP CLEANSING OIL
+2024-06-29,Skincare (Body),Physical Exfoliator,Exfoliation,AVEENO,Amazon,1,7.99,7.99,Low,AVEENO - TONE AND TEXTURE RENEWING BODY SCRUB
+2024-06-29,Skincare (Face),Face Cleanser,Cleansing,HARUHARU WONDER,Amazon,1,16.89,16.89,Medium,HARUHARU WONDER - BLACK RICE MOISTURE 5.5 SOFT CLEANSING GEL
+2024-06-29,Lip care,Lip Balm,Moisturizing & Hydration,NIVEA,Amazon,2,1.99,3.97,Low,NIVEA - SUN LIP BALM WITH SPF 30
+2024-06-29,Skincare (Body),Sunscreen,Protection,NEUTROGENA,Amazon,1,13.99,13.99,Medium,NEUTROGENA - ULTRA SHEER BODY MIST SUNSCREEN SPRAY SPF 60
+2024-06-29,Haircare,Tools/Accessories (Hair),Styling,SUKH,Amazon,1,9.99,9.99,Low,SUKH - 1000+ PCS PONY BEADS 
+2024-07-15,Skincare (Body),Toner,Exfoliation,THE ORDINARY,The Ordinary,1,17.16,17.16,Medium,THE ORDINARY - GLYCOLIC ACID 7% EXFOLIATING TONER
+2024-07-15,Skincare (Body),Sunscreen,Protection,LA ROCHE-POSAY,Amazon,1,35.5,35.5,Medium,LA ROCHE-POSAY - ANTHELIOS ULTRA FLUID BODY SUNSCREEN BROAD SPECTRUM SPF 50+
+2024-07-15,Skincare (Face),Ampoule,Treatment & Repair,SKIN1004,Amazon,1,18.99,18.99,Medium,SKIN1004 - MADAGASCAR CENTELLA ASIATICA AMPOULE FACIAL SERUM
+2024-07-15,Haircare,Leave-in Spray/Hair Herbs,Hair Growth,BLOOM HEALTH GOODS,Amazon,1,28.0,28.0,Medium,BLOOM HEALTH GOODS - RICE WATER & BREWED ROSEMARY SPRAY
+2024-07-15,Skincare (Face),Face Gel Moisturizer,Moisturizing & Hydration,E.L.F,Amazon,1,15.42,15.42,Medium,E.L.F - HOLY HYDRATION! GEL-YEAH MOISTURISER
+2024-07-20,Skincare (Face),Sunscreen,Protection,BEAUTY OF JOSEON,Stylevana,1,4.69,4.69,Low,BEAUTY OF JOSEON - RELIEF SUN : RICE + PROBIOTIC SPF50+ PA++++
+2024-07-20,Skincare (Body),Sunscreen,Protection,SKIN AQUA,Stylevana,1,15.59,15.59,Medium,SKIN AQUA - SKIN AQUA SUNSCREEN SUPER MOISTURE GEL PUMP SPF50+ PA++++
+2024-07-20,Skincare (Face),Eye Cream,Treatment & Repair,HARUHARU WONDER,Stylevana,1,13.29,13.29,Medium,HARUHARU WONDER - BLACK RICE BAKUCHIOL EYE CREAM
+2024-07-21,Skincare (Face),Face Cleanser,Cleansing,AVEENO,Amazon,1,10.97,10.97,Medium,AVEENO - CALM + RESTORE NOURISHING OAT FACIAL CLEANSER
+2024-07-21,Skincare (Body),Hand Cream,Moisturizing & Hydration,EUCERIN,Amazon,1,10.39,10.39,Medium,EUCERIN - COMPLETE REPAIR MOISTURIZING HAND CREAM FOR DRY HANDS
+2024-07-21,Lip care,DIY Ingredients,Multipurpose,WESTPOINT NATURALS,Amazon,1,8.49,8.49,Low,WESTPOINT NATURALS - BEET POWDER
+2024-07-21,Lip care,DIY Ingredients,Multipurpose,EVERLAND,Amazon,1,6.99,6.99,Low,EVERLAND -  VIRGIN COCONUT OIL
+2024-07-21,Skincare (Face),Face Lotion,Moisturizing & Hydration,Q + A,Amazon,1,16.0,16.0,Medium,Q + A - ZINC PCA DAILY MOISTURISER
+2024-07-21,Lip care,DIY Ingredients,Multipurpose,NOW SOLUTIONS,Amazon,1,6.29,6.29,Low,NOW SOLUTIONS - SWEET ALMOND OIL
+2024-07-21,Skincare (Face),Face Gel Moisturizer,Moisturizing & Hydration,CERAVE,Amazon,1,16.98,16.98,Medium,CERAVE - ULTRA-LIGHT MOISTURIZING GEL
+2024-07-21,Skincare (Face),Serum,Treatment & Repair,I'M FROM,Amazon,1,29.5,29.5,Medium,I'M FROM - RICE SERUM
+2024-07-21,Lip care,DIY Ingredients,Moisturizing & Hydration,AMSON NATURALS,Amazon,1,14.99,14.99,Medium,AMSON NATURALS - SHEA BUTTER 1 LB
+2024-07-28,Skincare (Face),Face Towel,Cleansing,GRANNY SAYS,Amazon,2,8.3,16.59,Low,GRANNY SAYS - LARGE FACE TOWELS
+2024-08-02,Skincare (Face),Sunscreen,Protection,BEAUTY OF JOSEON,Stylevana,1,19.69,19.69,Medium,BEAUTY OF JOSEON - MATTE SUN STICK : MUGWORT + CAMELIA SPF50 PA++++
+2024-08-02,Skincare (Face),Essence,Moisturizing & Hydration,COSRX,Stylevana,1,15.59,15.59,Medium,COSRX - ADVANCED SNAIL 96 MUCIN POWER ESSENCE
+2024-08-02,Skincare (Face),Sunscreen,Protection,ANUA,Stylevana,1,18.71,18.71,Medium,ANUA - HEARTLEAF SILKY MOISTURE SUN CREAM SPF50+ PA++++
+2024-08-05,Skincare (Body),Bar Soap,Cleansing,DOVE,Amazon,6,1.31,7.88,Low,DOVE - ORIGINAL BEAUTY BAR
+2024-08-05,Oral care,Floss,Cleansing,ORAL B,Amazon,2,3.97,7.94,Low,ORAL B - GLIDE FLOSS PICKS
+2024-08-07,Skincare (Face),Chemical Exfoliator,Exfoliation,PAULA'S CHOICE,Amazon,1,19.0,19.0,Medium,PAULA'S CHOICE - SKIN PERFECTING 2% BHA
+2024-08-11,Skincare (Body),Body Wash,Cleansing,LA ROCHE-POSAY,La Roche-Posay,1,20.65,20.65,Medium,LA ROCHE-POSAY - LIPIKAR SYNDET AP+ SOAP-FREE FACE AND BODY WASH
+2024-08-11,Skincare (Body),Body Cream,Moisturizing & Hydration,LA ROCHE-POSAY,La Roche-Posay,1,30.55,30.55,Medium,LA ROCHE-POSAY - LIPIKAR BAUME AP+M BODY MOISTURIZER
+2024-08-14,Skincare (Face),Face Lotion,Moisturizing & Hydration,CETAPHIL,Amazon,1,16.97,16.97,Medium,CETAPHIL - GENTLE CLEAR ACNE MOISTURIZER WITH SALICYLIC ACID
+2024-08-16,Skincare (Face),Toner,Toning & Balancing,I'M FROM,Stylevana,3,19.99,59.96,Medium,I'M FROM - RICE TONER
+2024-08-16,Skincare (Face),Sunscreen,Protection,ANUA,Stylevana,1,18.52,18.52,Medium,ANUA - HEARTLEAF SILKY MOISTURE SUN CREAM SPF50+ PA++++
+2024-08-16,Body Fragrance,Deodrant,Odor Control & Freshness,LUME,Lume,2,21.46,42.92,Medium,LUME - WHOLE BODY DEODORANT
+2024-08-31,Skincare (Face),Serum,Treatment & Repair,VERSED,Shoppers Drug Mart,1,21.59,21.59,Medium,VERSED - GENTLE RETINOL
+2024-08-31,Skincare (Face),Serum,Treatment & Repair,VERSED,Shoppers Drug Mart,1,22.39,22.39,Medium,VERSED - STROKE OF BRILLIANCE SERUM
+2024-08-31,Skincare (Face),Face Lotion,Moisturizing & Hydration,CERAVE,Shoppers Drug Mart,1,15.99,15.99,Medium,CERAVE - PM LOTION
+2024-08-31,Skincare (Body),Bar Soap,Cleansing,DOVE,Shoppers Drug Mart,3,2.33,6.99,Low,DOVE - BAR SENSITIVE SOAP
+2024-08-31,Skincare (Body),Body Wash,Exfoliation,NATURIUM,Shoppers Drug Mart,1,21.99,21.99,Medium,NATURIUM - GLYCOLIC ACID BODY WASH
+2024-08-31,Skincare (Face),Cotton Bud/Pad,Applicator,QUO,Shoppers Drug Mart,1,7.89,7.89,Low,QUO - BEAUTY PAD
+2024-08-31,Oral care,Toothpaste,Cleansing,HELLO,Shoppers Drug Mart,1,5.99,5.99,Low,HELLO - ACTIVATED CHARCOAL EPIC TEETH WHITENING TOOTHPASTE
+2024-08-31,Oral care,Mouthwash/Pulling Oil,Cleansing,HELLO,Shoppers Drug Mart,1,5.99,5.99,Low,HELLO - SUPER FRESH MOUTHWASH
+2024-09-20,Haircare,Shampoo,Cleansing,SHEA MOISTURE,Amazon,1,10.99,10.99,Medium,SHEA MOISTURE - JAMAICAN BLACK CASTOR OIL STENGTHEN & RESTORE SHAMPOO
+2024-09-20,Haircare,Leave-in Spray/Hair Herbs,Hair Growth,FOOTHILLS NATURALS,Amazon,1,30.99,30.99,Medium,FOOTHILLS NATURALS - HIBISCUS TEA ORGANIC FLOWERS
+2024-09-20,Skincare (Face),Face Cleanser,Treatment & Repair,PANOXYL,Amazon,1,10.79,10.79,Medium,PANOXYL - CREAMY ACNE WASH - 4% BENZOYL PEROXIDE
+2024-09-20,Skincare (Face),Face Towel,Cleansing,GRANNY SAYS,Amazon,2,8.8,17.59,Low,GRANNY SAYS - LARGE FACE TOWELS
+2024-09-27,Skincare (Body),Body Oil,Treatment & Repair,SKINCARE BY DR. V,Skincare by Dr. V,1,63.0,63.0,High,SKINCARE BY DR. V - BODY BRIGHTENING OIL
+2024-09-27,Skincare (Body),Supplements,Support & Enhancement,SKINCARE BY DR. V,Skincare by Dr. V,1,59.0,59.0,High,SKINCARE BY DR. V - COLLAGEN BOOST GEL SHOTS
+2024-10-07,Skincare (Face),Sunscreen,Protection,SKIN1004,Stylevana,1,12.28,12.28,Medium,SKIN1004 - MADAGASCAR CENTELLA HYALU-CICA WATER-FIT SUN SERUM SPF50 PA++++
+2024-10-07,Skincare (Face),Sunscreen,Protection,NUMBUZIN,Stylevana,1,25.25,25.25,Medium,NUMBUZIN - NO.1 CLEAR FILTER SUN ESSENCE SPF 50+ PA ++++
+2024-10-07,Skincare (Face),Toner,Toning & Balancing,NUMBUZIN,Stylevana,1,11.9,11.9,Medium,NUMBUZIN - NO.1 PURE-FULL CALMING HERB TONER
+2024-10-07,Skincare (Face),Face Gel Moisturizer,Moisturizing & Hydration,NUMBUZIN,Stylevana,1,29.45,29.45,Medium,NUMBUZIN - NO.1 PANTOTHENIC B5 ACTIVE SOOTHING CREAM
+2024-10-08,Skincare (Face),Face Mist/Spray,Cleansing,HONEYDEW LABS,Amazon,1,10.2,10.2,Medium,HONEYDEW LABS - HYPOCHLOROUS ACID SPRAY
+2024-10-08,Lip care,Lip Balm,Moisturizing & Hydration,EUCERIN,Amazon,1,6.74,6.74,Low,EUCERIN - AQUAPHOR LIP BALM
+2024-10-08,Skincare (Body),Body Lotion,Moisturizing & Hydration,CERAVE,Amazon,1,16.99,16.99,Medium,CERAVE - DAILY MOISTURIZING LOTION
+2024-10-08,Oral care,Tongue Scraper,Cleansing,MASTERMEDI,Amazon,2,6.36,12.71,Low,MASTERMEDI - TONGUE SCRAPER FOR BAD BREATH
+2024-10-08,Skincare (Face),Cleansing Oil,Cleansing,CERAVE,Amazon,1,18.68,18.68,Medium,CERAVE - HYDRATING FOAMING OIL FACE CLEANSER
+2024-10-08,Skincare (Body),Foot Cream,Exfoliation,PROFOOT,Amazon,1,15.17,15.17,Medium,PROFOOT - HEEL RESCUE FOOT CREAM
+2024-10-08,Skincare (Face),Chemical Exfoliator,Exfoliation,PAULA'S CHOICE,Paula's Choice,1,40.65,40.65,Medium,PAULA'S CHOICE - SKIN PERFECTING 2% BHA
+2024-10-08,Lip care,Sunscreen,Protection,PAULA'S CHOICE,Paula's Choice,1,15.1,15.1,Medium,PAULA'S CHOICE - LIPSCREEN SPF 50
+2024-10-12,Body Fragrance,Perfume,Odor Control & Freshness,LATTAFA,FragranceNet,1,34.7,34.7,Medium,LATTAFA - BADEE AL OUD HONOR & GLORY - EAU DE PARFUM SPRAY 
+2024-10-12,Body Fragrance,Perfume,Odor Control & Freshness,COACH,FragranceNet,1,39.04,39.04,Medium,COACH - DREAMS SUNSET - EAU DE PARFUM SPRAY
+2024-10-12,Body Fragrance,Perfume,Odor Control & Freshness,PARFUMS DE MARLY,FragranceNet,1,10.4,10.4,Medium,PARFUMS DE MARLY - MELIORA - EAU DE PARFUM SPRAY
+2024-10-19,Skincare (Face),Cotton Bud/Pad,Applicator,QUO,Shoppers Drug Mart,1,9.99,9.99,Low,QUO - BEAUTY PAD
+2024-10-19,Skincare (Face),Face Cream,Moisturizing & Hydration,HONEST BEAUTY,Shoppers Drug Mart,1,23.99,23.99,Medium,HONEST BEAUTY - HYDROGEL CREAM
+2024-10-25,Skincare (Face),Serum,Treatment & Repair,PAULA'S CHOICE,Paula's Choice,1,44.74,44.74,Medium,PAULA'S CHOICE - 10% AZELAIC ACID BOOSTER
+2024-10-25,Skincare (Face),Chemical Exfoliator,Exfoliation,PAULA'S CHOICE,Paula's Choice,1,18.0,18.0,Medium,PAULA'S CHOICE - SKIN PERFECTING 6% MANDELIC ACID + 2% LACTIC ACID LIQUID EXFOLIANT
+2024-10-29,Skincare (Face),Pimple Patch,Treatment & Repair,PANOXYL,Shoppers Drug Mart,1,9.69,9.69,Low,PANOXYL - PIMPLE PATCH
+2024-10-29,Skincare (Face),Face Towel,Cleansing,GRANNY SAYS,Amazon,2,9.5,19.0,Low,GRANNY SAYS - LARGE FACE TOWELS
+2024-10-30,Skincare (Face),Face Cleanser,Cleansing,AVEENO,Amazon,2,9.59,19.18,Low,AVEENO - CALM + RESTORE NOURISHING OAT FACIAL CLEANSER
+2024-11-10,Skincare (Body),Hand Cream,Moisturizing & Hydration,EUCERIN,Amazon,1,9.98,9.98,Low,EUCERIN - COMPLETE REPAIR MOISTURIZING HAND CREAM
+2024-11-10,Haircare,Deep Conditioner,Treatment & Repair,SHEA MOISTURE,Amazon,1,14.37,14.37,Medium,SHEA MOISTURE - MANUKA HONEY & MAFURA OIL DEEP CONDITIONING TREATMENT
+2024-11-10,Haircare,Detangler,Moisturizing & Hydration,SHEA MOISTURE,Amazon,1,14.4,14.4,Medium,SHEA MOISTURE - LOW POROSITY WEIGHTLESS HYDRATING DETANGLER
+2024-11-17,Skincare (Face),Eye Cream,Treatment & Repair,BEAUTY OF JOSEON,Stylevana,1,13.91,13.91,Medium,BEAUTY OF JOSEON - REVIVE EYE SERUM : GINSENG + RETINAL
+2024-11-17,Skincare (Face),Clay Mask,Exfoliation,SKIN1004,Stylevana,1,13.23,13.23,Medium,SKIN1004 - MADAGASCAR CENTELLA POREMIZING QUICK CLAY STICK MASK
+2024-11-17,Skincare (Face),Toner,Toning & Balancing,NUMBUZIN,Stylevana,2,21.14,42.28,Medium,NUMBUZIN - NO.1 PURE-FULL CALMING HERB TONER
+2024-11-26,Skincare (Face),Serum,Treatment & Repair,PAULA'S CHOICE,Paula's Choice,1,65.36,65.36,High,PAULA'S CHOICE - PRO-COLLAGEN MULTI-PEPTIDE BOOSTER
+2024-11-26,Skincare (Face),Chemical Exfoliator,Exfoliation,PAULA'S CHOICE,Paula's Choice,1,41.0,41.0,Medium,PAULA'S CHOICE - SKIN PERFECTING 6% MANDELIC ACID + 2% LACTIC ACID LIQUID EXFOLIANT
+2024-11-26,Skincare (Face),Serum,Treatment & Repair,PAULA'S CHOICE,Paula's Choice,1,43.21,43.21,Medium,PAULA'S CHOICE - 10% AZELAIC ACID BOOSTER
+2024-11-27,Skincare (Face),Serum,Treatment & Repair,INKEY LIST,The INKEY List,1,14.95,14.95,Medium,INKEY LIST - TRANEXAMIC ACID SERUM
+2024-11-28,Skincare (Face),Face Mist/Spray,Cleansing,HONEYDEW LABS,Amazon,1,15.16,15.16,Medium,HONEYDEW LABS - HYPOCHLOROUS ACID SPRAY
+2024-11-29,Skincare (Face),Sunscreen,Protection,NUMBUZIN,Yesstyle,2,20.36,40.72,Medium,NUMBUZIN - NO.1 CLEAR FILTER SUN ESSENCE SPF 50+ PA ++++
+2024-11-29,Skincare (Body),Body Lotion,Moisturizing & Hydration,APLB,Yesstyle,1,12.79,12.79,Medium,APLB - GLUTATHIONE NIACINAMIDE BODY LOTION
+2024-11-29,Skincare (Face),Face Cream,Moisturizing & Hydration,PURITO SEOUL,Yesstyle,1,13.71,13.71,Medium,PURITO SEOUL - MIGHTY BAMBOO PANTHENOL CREAM
+2024-12-01,Skincare (Face),Humectant,Moisturizing & Hydration,NOW SOLUTIONS,Amazon,1,6.74,6.74,Low,NOW SOLUTIONS - VEGETABLE GLYCERIN
+2024-12-01,Skincare (Face),Tools/Accessories (Skin),Applicator,CHIRISEN,Amazon,1,8.19,8.19,Low,CHIRISEN - RECHARGEABLE HANDY NANO MISTER
+2024-12-18,Skincare (Body),Occlusive,Occlusion,VASELINE,Shoppers Drug Mart,1,5.29,5.29,Low,VASELINE - HEALING JELLY ORIGINAL
+2024-12-29,Haircare,Hair Oil,Hair Growth,SHEA MOISTURE,Amazon,1,13.91,13.91,Medium,SHEA MOISTURE - STRENGTHENING SCALP & HAIR OIL ROSEMARY & VEGAN COLLAGEN
+2024-12-29,Skincare (Face),Face Towel,Cleansing,GRANNY SAYS,Amazon,2,9.94,19.88,Low,GRANNY SAYS - LARGE FACE TOWELS
+2025-01-10,Skincare (Body),Hand Cream,Moisturizing & Hydration,GLYSOMED,Amazon,1,10.97,10.97,Medium,GLYSOMED - HAND CREAM FRAGRANCE FREE
+2025-01-15,Body Fragrance,Deodrant,Odor Control & Freshness,LUME,Lume,2,16.8,33.6,Medium,LUME - WHOLE BODY DEODORANT
+2025-01-17,Skincare (Body),Occlusive,Occlusion,VASELINE,Shoppers Drug Mart,1,7.79,7.79,Low,VASELINE - HEALING JELLY ORIGINAL
+2025-01-21,Skincare (Body),Body Wash,Exfoliation,NATURIUM,Shoppers Drug Mart,1,21.99,21.99,Medium,NATURIUM - GLYCOLIC ACID BODY WASH
+2025-01-21,Skincare (Body),Body Wash,Cleansing,LA ROCHE-POSAY,Shoppers Drug Mart,2,21.95,43.9,Medium,LA ROCHE-POSAY - LIPIKAR SYNDET AP+ SOAP-FREE FACE AND BODY WASH
+2025-03-15,Oral care,Toothpaste,Cleansing,HELLO,Shoppers Drug Mart,1,5.99,5.99,Low,HELLO - NATURALLY WHITENING FLUORIDE TOOTHPASTE
+2025-03-15,Oral care,Mouthwash/Pulling Oil,Cleansing,HELLO,Shoppers Drug Mart,1,5.99,5.99,Low,HELLO - SUPER FRESH MOUTHWASH
+2025-04-10,Skincare (Face),Face Towel,Cleansing,GRANNY SAYS,Amazon,2,9.3,18.59,Low,GRANNY SAYS - LARGE FACE TOWELS
+2025-04-10,Skincare (Face),Sunscreen,Protection,NUMBUZIN,Stylevana,3,21.3,63.9,Medium,NUMBUZIN - NO.1 CLEAR FILTER SUN ESSENCE SPF 50+ PA ++++
+2025-04-10,Skincare (Body),Body Lotion,Moisturizing & Hydration,APLB,Stylevana,1,9.79,9.79,Low,APLB - GLUTATHIONE NIACINAMIDE BODY LOTION
+2025-04-10,Skincare (Face),Cleansing Oil,Cleansing,CERAVE,Shoppers Drug Mart,1,24.99,24.99,Medium,CERAVE - HYDRATING FOAMING OIL FACE CLEANSER
+2025-04-10,Skincare (Body),Body Wash,Cleansing,LA ROCHE-POSAY,Shoppers Drug Mart,1,20.95,20.95,Medium,LA ROCHE-POSAY - LIPIKAR SYNDET AP+ SOAP-FREE FACE AND BODY WASH
+2025-04-10,Skincare (Body),Body Wash,Exfoliation,NATURIUM,Shoppers Drug Mart,1,17.59,17.59,Medium,NATURIUM - GLYCOLIC ACID BODY WASH
+2025-04-10,Skincare (Face),Face Cleanser,Cleansing,AVEENO,Shoppers Drug Mart,3,12.99,38.98,Medium,AVEENO - CALM + RESTORE NOURISHING OAT FACIAL CLEANSER
+2025-04-10,Skincare (Body),Body Wash,Cleansing,AVEENO,Shoppers Drug Mart,1,14.99,14.99,Medium,AVEENO - CALM + RESTORE BODY WASH
+2025-04-10,Skincare (Body),Body Wash,Cleansing,CERAVE,Shoppers Drug Mart,1,20.99,20.99,Medium,CERAVE - BABY WASH & SHAMPOO
+2025-04-10,Skincare (Face),Micellar Water,Cleansing,GARNIER,Shoppers Drug Mart,1,14.99,14.99,Medium,GARNIER - MICELLAR CLEANSING WATER
