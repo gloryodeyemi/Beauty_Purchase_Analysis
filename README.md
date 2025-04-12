@@ -59,3 +59,8 @@ A Tableau dashboard was created to explore and communicate the insights derived 
   * Product Dashboard: Product analysis and detailed table of all purchased items with filters/sort.
   * Brand Dashboard: Brand analysis detailed table of all brands with filters/sort.
   * Dashboard Documentation: Reference material on navigating and using the dashboard.
+
+> **🔗 View the Dashboard on [Tableau Public](https://public.tableau.com/views/BeautyProductsPurchaseDashboard/SummaryDashboard)**  
+
+![img](https://github.com/gloryodeyemi/Beauty_Purchase_Analysis/blob/main/resources/images/summary-dashboard.png)
+![img](https://github.com/gloryodeyemi/Beauty_Purchase_Analysis/blob/main/resources/images/product-list.png)
