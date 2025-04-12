@@ -54,13 +54,47 @@ This project analyzes real-world beauty product purchase data through a robust d
   * Current State: Due to platform limitations, Tableau Public is used for final publishing with an extracted version of the Snowflake data.
 
 ## 📊 Final Output: Dashboard
-A Tableau dashboard was created to explore and communicate the insights derived from the data. It includes:
+A Tableau interactive dashboard was created to explore and communicate the insights derived from the data. It includes:
   * Overview Dashboard: Annual trends, spending summaries, top products, stores & brands, and top 10 recent purchases.
   * Product Dashboard: Product analysis and detailed table of all purchased items with filters/sort.
   * Brand Dashboard: Brand analysis detailed table of all brands with filters/sort.
   * Dashboard Documentation: Reference material on navigating and using the dashboard.
 
-> **🔗 View the Dashboard on [Tableau Public](https://public.tableau.com/views/BeautyProductsPurchaseDashboard/SummaryDashboard)**  
+> **🔗 View the Dashboard on [Tableau Public](https://public.tableau.com/views/BeautyProductsPurchaseDashboard/SummaryDashboard)**
 
 ![img](https://github.com/gloryodeyemi/Beauty_Purchase_Analysis/blob/main/resources/images/summary-dashboard.png)
 ![img](https://github.com/gloryodeyemi/Beauty_Purchase_Analysis/blob/main/resources/images/product-list.png)
+
+## 📁 Project Structure
+```
+.
+├── airflow/
+│   ├── dags/
+│   │   ├── beauty_pipeline.py       # Airflow DAG definition
+│   │   └── etl/                     # Python scripts for each ETL stage
+│   │       ├── extract.py           # Extracts data from Google Sheets
+│   │       ├── transform.py         # Cleans and prepares data
+│   │       └── load.py              # Loads data into Snowflake raw table
+│   ├── data/
+│   │   └── purchase_data.csv        # Backup of cleaned & transformed data
+│   ├── docker-compose.yaml          # Docker setup for Airflow
+│   ├── Dockerfile                   # Dockerfile for Airflow environment
+│   └── requirements.txt             # Python dependencies
+│
+├── resources/
+│   ├── dashboard-images/            # Images used for dashboard background styling
+│   ├── icons/                       # Icons used in the dashboard
+│   └── images/                      # Snapshots used in README
+│
+├── snowflake/
+│   ├── data_model.sql               # SQL to create Snowflake schema, tables, roles, etc.
+│   └── stored_proc.sql              # SQL stored procedure for transforming & inserting data
+│
+├── .gitignore
+└── README.md
+```
+
+## 👩🏽‍💻 Creator
+Glory Odeyemi - Data Engineer & Analyst
+- For questions, feedback, opportunities, or collaborations, connect with me via [LinkedIn](https://www.linkedin.com/in/glory-odeyemi/).
+- For more exciting projects or inspiration, check out my [GitHub repositories](https://github.com/gloryodeyemi).
