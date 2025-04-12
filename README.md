@@ -34,6 +34,8 @@ This project analyzes real-world beauty product purchase data through a robust d
   * Data modeling: The fact and dimension tables are designed in Snowflake using the Snowflake schema.
   * Records are inserted into the appropriate fact and dimension tables using a stored procedure.
   * Tool: Snowflake SQL.
+    
+  ![img](https://github.com/gloryodeyemi/Beauty_Purchase_Analysis/blob/main/resources/images/Beauty-data-model.png)
 
 ### 5. Orchestration
   * Apache Airflow DAG runs the full pipeline weekly.
@@ -63,7 +65,7 @@ A Tableau interactive dashboard was created to explore and communicate the insig
 > **🔗 View the Dashboard on [Tableau Public](https://public.tableau.com/views/BeautyProductsPurchaseDashboard/SummaryDashboard)**
 
 ![img](https://github.com/gloryodeyemi/Beauty_Purchase_Analysis/blob/main/resources/images/summary-dashboard.png)
-![img](https://github.com/gloryodeyemi/Beauty_Purchase_Analysis/blob/main/resources/images/product-list.png)
+![img](https://github.com/gloryodeyemi/Beauty_Purchase_Analysis/blob/main/resources/images/RPList.png)
 
 ## 📁 Project Structure
 ```
