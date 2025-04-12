@@ -38,7 +38,24 @@ This project analyzes real-world beauty product purchase data through a robust d
 ### 5. Orchestration
   * Apache Airflow DAG runs the full pipeline weekly.
   * Handles error logging and ensures consistent data refresh.
+    
+  ![img](https://github.com/gloryodeyemi/Beauty_Purchase_Analysis/blob/main/resources/images/airflow_automation.png)
 
 ### 6. Visualization
   * Tableau is connected to Snowflake (initially live, now extracted).
   * The final dashboard is built to explore trends, KPIs, and insights.
+  * Tool: Tableau Cloud for dashboard building and Tableau Public for publishing.
+
+## 📑 Data Source Summary
+  * Origin: Manually logged Google Sheet tracking beauty product purchases.
+  * Tracked Fields: Product name (as written by the store), short name (actual product name), purchase date, product category, product type, product purpose, brand, store, quantity, unit price, and total price.
+  * Added fields: Product name (brand + '-' + short name), price category (low, medium, and high - created from unit price).
+  * ETL Flow: Google Sheets → Python (extraction, clean/transform) → Snowflake (raw, fact/dim tables) → Tableau (dashboard).
+  * Current State: Due to platform limitations, Tableau Public is used for final publishing with an extracted version of the Snowflake data.
+
+## 📊 Final Output: Dashboard
+A Tableau dashboard was created to explore and communicate the insights derived from the data. It includes:
+  * Overview Dashboard: Annual trends, spending summaries, top products, stores & brands, and top 10 recent purchases.
+  * Product Dashboard: Product analysis and detailed table of all purchased items with filters/sort.
+  * Brand Dashboard: Brand analysis detailed table of all brands with filters/sort.
+  * Dashboard Documentation: Reference material on navigating and using the dashboard.
