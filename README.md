@@ -7,7 +7,7 @@ This project analyzes real-world beauty product purchase data through a robust d
 * Uncover trends in spending, product types, and brand loyalty.
 * Serve as a template for others to understand purchase patterns using real-life data and modern analytics tools.
 
-## 👩‍💻 Tech Stack
+## 🧰 Tech Stack
 | Tool | Purpose |
 |------|---------|
 | ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=googlesheets&logoColor=white) | Raw data source – purchase entries are logged here |
@@ -50,8 +50,8 @@ This project analyzes real-world beauty product purchase data through a robust d
 
 ## 📑 Data Source Summary
   * Origin: Manually logged Google Sheet tracking beauty product purchases.
-  * Tracked Fields: Product name (as written by the store), short name (actual product name), purchase date, product category, product type, product purpose, brand, store, quantity, unit price, and total price.
-  * Added fields: Product name (brand + '-' + short name), price category (low, medium, and high - created from unit price).
+  * Tracked Fields: Date_Bought, Product_Name (as written by the store), Short_Name (actual product name), Product_Category, Product_Type, Product_Purpose, Brand, Store, Quantity, Unit_Price, and Total_Price.
+  * Modified fields: Date_Bought, Product_Name (Brand + '-' + Short_Name), Product_Category, Product_Type, Product_Purpose, Brand, Store, Quantity, Unit_Price, Total_Price, and Price_Category (low, medium, and high - created from unit price).
   * ETL Flow: Google Sheets → Python (extraction, clean/transform) → Snowflake (raw, fact/dim tables) → Tableau (dashboard).
   * Current State: Due to platform limitations, Tableau Public is used for final publishing with an extracted version of the Snowflake data.
 
@@ -95,6 +95,61 @@ A Tableau interactive dashboard was created to explore and communicate the insig
 ├── .gitignore
 └── README.md
 ```
+
+## 📝 Recreating/Reusing This Project
+To successfully recreate/reuse this project for your own data pipeline and dashboard, follow the steps below:
+
+#### 1. Clone the Repository
+```
+git clone https://github.com/gloryodeyemi/Beauty_Purchase_Analysis.git
+cd beauty-purchase-pipeline
+```
+
+#### 2. Create Required Accounts
+You'll need the following accounts:
+  * Snowflake (free trial)
+  * Tableau Cloud (Free trial or full version)
+  * Google Cloud Platform (GCP) for Google Sheets API access
+
+#### 3. Snowflake Setup
+* Log in to your Snowflake account.
+* Execute the SQL scripts in the snowflake/ folder:
+  - data_model.sql: Sets up warehouse, roles, database, schemas, and tables.
+  - stored_proc.sql: Creates stored procedures for data transformation and insertion.
+
+#### 4. Google Sheets API Access
+If you’re pulling data from Google Sheets:
+  * Go to Google Cloud Console.
+  * Create a new project or select an existing one.
+  * Enable the Google Sheets API and Google Drive API.
+  * Create a service account and download the JSON key.
+  * Share your Google Sheet with the service account email.
+  * Add the JSON key file path to your project environment variable.
+
+#### 5. Set Up Airflow Environment (with Docker)
+* Navigate to the airflow/ directory.
+* Start Airflow using Docker Compose:
+```
+docker compose up --build -d
+```
+* Access the Airflow web UI at http://localhost:8080.
+* Navigate to Admin -> Connections and create a new Snowflake and Google connections using your account information.
+* Trigger the beauty_purchase_pipeline DAG to extract, transform, and load the data into Snowflake.
+
+#### 6. Verify Data in Snowflake
+* Use Snowflake's UI to query your fact and related dimension tables.
+* Confirm that your data is correctly inserted and transformed.
+
+#### 7. Visualize with Tableau Cloud
+* Sign in to Tableau Cloud.
+* Connect Tableau to your Snowflake database.
+* Use the Snowflake credentials and warehouse info configured in data_model.sql.
+* Recreate or import the dashboard using images & icons in resources/.
+
+## 👩🏽‍💻 Future Work
+1. **Deploy the Pipeline to the Cloud:** Host the existing Airflow pipeline on a cloud platform (e.g., AWS EC2) and connect it to a managed Snowflake instance for seamless scheduling and scalability.
+2. **Add Predictive Analytics:** Train and integrate a simple regression or time-series model within Snowflake (using Snowpark) to forecast future product demand.
+3. **Implement Notifications:** Set up email notifications for pipeline failures and completions.
 
 ## 👩🏽‍💻 Creator
 Glory Odeyemi - Data Engineer & Analyst
