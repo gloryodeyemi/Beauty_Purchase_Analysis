@@ -41,7 +41,7 @@ fact and dimension tables creation
 -- date dimension table
 CREATE OR REPLACE TABLE beauty_purchase_dim_date.date (
     date_id INT AUTOINCREMENT PRIMARY KEY,
-    date DATE UNIQUE,
+    date DATE,
     day INT,
     month INT,
     quarter INT,
@@ -54,37 +54,37 @@ CREATE OR REPLACE TABLE beauty_purchase_dim_date.date (
 -- store dimension table
 CREATE OR REPLACE TABLE beauty_purchase_dim_store.store (
     store_id INT AUTOINCREMENT PRIMARY KEY,
-    store_name VARCHAR(16777216) UNIQUE
+    store_name VARCHAR(16777216)
 );
 
 -- brand table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.brand (
     brand_id INT AUTOINCREMENT PRIMARY KEY,
-    brand_name VARCHAR(16777216) UNIQUE
+    brand_name VARCHAR(16777216)
 );
 
 -- product type table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.product_type (
     type_id INT AUTOINCREMENT PRIMARY KEY,
-    type_name VARCHAR(16777216) UNIQUE
+    type_name VARCHAR(16777216)
 );
 
 -- product purpose table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.product_purpose (
     purpose_id INT AUTOINCREMENT PRIMARY KEY,
-    purpose_name VARCHAR(16777216) UNIQUE
+    purpose_name VARCHAR(16777216)
 );
 
 -- product category table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.product_category (
     category_id INT AUTOINCREMENT PRIMARY KEY,
-    category_name VARCHAR(16777216) UNIQUE
+    category_name VARCHAR(16777216)
 );
 
 -- product dimension table
 CREATE OR REPLACE TABLE beauty_purchase_dim_product.product (
     product_id INT AUTOINCREMENT PRIMARY KEY,
-    product_name VARCHAR(16777216) UNIQUE,
+    product_name VARCHAR(16777216),
     category_id INT,
     type_id INT,
     purpose_id INT,
