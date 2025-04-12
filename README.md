@@ -1,2 +1,44 @@
-# Beauty Purchase Analysis
-An end-to-end pipeline to extract, transform, and load beauty purchase data for analysis and visualization.
+# 🛠️  End-to-End Data Pipeline for Beauty Products Purchase Analysis
+An end-to-end data engineering and analysis project that builds an automated data pipeline from Google Sheets to Snowflake, orchestrated with Apache Airflow and visualized in Tableau. This project captures real-world personal beauty product purchases, transforming raw entries into structured insights.
+
+## 📌 Project Overview
+This project analyzes real-world beauty product purchase data through a robust data pipeline and visualization framework. It was designed to:
+* Track personal purchase behaviors and product preferences.
+* Uncover trends in spending, product types, and brand loyalty.
+* Serve as a template for others to understand purchase patterns using real-life data and modern analytics tools.
+
+## 👩‍💻 Tech Stack
+| Tool | Purpose |
+|------|---------|
+| ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=for-the-badge&logo=googlesheets&logoColor=white) | Raw data source – purchase entries are logged here |
+| ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) | Data extraction, cleaning, transformation, and Snowflake loading |
+| ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white) | Data warehouse – stores fact & dimension tables |
+| ![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white) | Pipeline automation & scheduling (weekly refresh) |
+| ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) | Containerization for Apache Airflow services |
+| ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white) | Final data visualization and dashboard exploration |
+
+## 🔄 ELT Pipeline Architecture
+### 1. Extract
+  * Source: Google Sheets with manually logged purchase data.
+  * Tool: Python uses gspread and pandas to pull the data.
+
+### 2. Transform
+  * Initial transformations: Removing duplicates, handling missing values, data type conversion, data validation, and standardization, joining, and creating new columns.
+  * Tool: Python pandas library.
+
+### 3. Load
+  * The transformed data is loaded into a raw schema/table in Snowflake
+  * Tool: Snowflake Python Connector.
+
+### 4. Further Transformations
+  * Data modeling: The fact and dimension tables are designed in Snowflake using the Snowflake schema.
+  * Records are inserted into the appropriate fact and dimension tables using a stored procedure.
+  * Tool: Snowflake SQL.
+
+### 5. Orchestration
+  * Apache Airflow DAG runs the full pipeline weekly.
+  * Handles error logging and ensures consistent data refresh.
+
+### 6. Visualization
+  * Tableau is connected to Snowflake (initially live, now extracted).
+  * The final dashboard is built to explore trends, KPIs, and insights.
