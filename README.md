@@ -146,7 +146,7 @@ docker compose up --build -d
 * Use the Snowflake credentials and warehouse info configured in data_model.sql.
 * Recreate or import the dashboard using images & icons in resources/.
 
-## 👩🏽‍💻 Future Work
+## 💡 Future Imporovements
 1. **Deploy the Pipeline to the Cloud:** Host the existing Airflow pipeline on a cloud platform (e.g., AWS EC2) and connect it to a managed Snowflake instance for seamless scheduling and scalability.
 2. **Add Predictive Analytics:** Train and integrate a simple regression or time-series model within Snowflake (using Snowpark) to forecast future product demand.
 3. **Implement Notifications:** Set up email notifications for pipeline failures and completions.
