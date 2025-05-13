@@ -153,7 +153,7 @@ docker compose up --build -d
 
 ## 🌟 About Me
 
-Hi there! I'm **Glory Odeyemi**. I’m a Data Engineer & Analyst!
+Hi there! I'm **Glory Odeyemi**, a Data Engineer & Analyst!
 
 Let's stay in touch! Feel free to connect with me on the following platforms:
 
