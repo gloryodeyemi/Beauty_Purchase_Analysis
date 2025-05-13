@@ -46,7 +46,7 @@ This project analyzes real-world beauty product purchase data through a robust d
 ### 6. Visualization
   * Tableau is connected to Snowflake (initially live, now extracted).
   * The final dashboard is built to explore trends, KPIs, and insights.
-  * Tool: Tableau Cloud for dashboard building and Tableau Public for publishing.
+  * Tool: Tableau Desktop for dashboard building and Tableau Public for publishing.
 
 ## 📑 Data Source Summary
   * Origin: Manually logged Google Sheet tracking beauty product purchases.
@@ -59,7 +59,7 @@ This project analyzes real-world beauty product purchase data through a robust d
 A Tableau interactive dashboard was created to explore and communicate the insights derived from the data. It includes:
   * Overview Dashboard: Annual trends, spending summaries, top products, stores & brands, and top 10 recent purchases.
   * Product Dashboard: Product analysis and detailed table of all purchased items with filters/sort.
-  * Brand Dashboard: Brand analysis detailed table of all brands with filters/sort.
+  * Brand Dashboard: Brand analysis and detailed table of all brands with filters/sort.
   * Dashboard Documentation: Reference material on navigating and using the dashboard.
 
 > **🔗 View the Dashboard on [Tableau Public](https://public.tableau.com/views/BeautyProductsPurchaseDashboard/SummaryDashboard)**
@@ -108,7 +108,7 @@ cd beauty-purchase-pipeline
 #### 2. Create Required Accounts
 You'll need the following accounts:
   * Snowflake (free trial)
-  * Tableau Cloud (Free trial or full version)
+  * Tableau Desktop (Free trial or full version)
   * Google Cloud Platform (GCP) for Google Sheets API access
 
 #### 3. Snowflake Setup
@@ -133,15 +133,15 @@ If you’re pulling data from Google Sheets:
 docker compose up --build -d
 ```
 * Access the Airflow web UI at http://localhost:8080.
-* Navigate to Admin -> Connections and create a new Snowflake and Google connections using your account information.
+* Navigate to Admin -> Connections and create a new Snowflake and Google connection using your account information.
 * Trigger the beauty_purchase_pipeline DAG to extract, transform, and load the data into Snowflake.
 
 #### 6. Verify Data in Snowflake
 * Use Snowflake's UI to query your fact and related dimension tables.
 * Confirm that your data is correctly inserted and transformed.
 
-#### 7. Visualize with Tableau Cloud
-* Sign in to Tableau Cloud.
+#### 7. Visualize with Tableau Desktop
+* Sign in to Tableau Desktop.
 * Connect Tableau to your Snowflake database.
 * Use the Snowflake credentials and warehouse info configured in data_model.sql.
 * Recreate or import the dashboard using images & icons in resources/.
@@ -151,7 +151,13 @@ docker compose up --build -d
 2. **Add Predictive Analytics:** Train and integrate a simple regression or time-series model within Snowflake (using Snowpark) to forecast future product demand.
 3. **Implement Notifications:** Set up email notifications for pipeline failures and completions.
 
-## 👩🏽‍💻 Creator
-Glory Odeyemi - Data Engineer & Analyst
-- For questions, feedback, opportunities, or collaborations, connect with me via [LinkedIn](https://www.linkedin.com/in/glory-odeyemi/).
-- For more exciting projects or inspiration, check out my [GitHub repositories](https://github.com/gloryodeyemi).
+## 🌟 About Me
+
+Hi there! I'm **Glory Odeyemi**. I’m a Data Engineer & Analyst!
+
+Let's stay in touch! Feel free to connect with me on the following platforms:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/glory-odeyemi/)
+[![GitHub](https://img.shields.io/badge/GitHub-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gloryodeyemi)
+[![Portfolio](https://img.shields.io/badge/Portfolio-ffffff?style=for-the-badge&labelColor=FF0000&logo=google-chrome&logoColor=white)](https://gloryodeyemi.github.io/)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://glowcodes.medium.com/)
